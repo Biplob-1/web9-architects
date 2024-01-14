@@ -49,6 +49,10 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
+nav li a:hover{
+    background: tomato;
+    color: #FFF;
+}
 /* banner-styles */
 .banner-content{
     max-width: 800px;
@@ -68,14 +72,63 @@ nav li a{
     width: 100%;
 }
 
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* border-radius: 8px; */
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    color:#727272;
+    font-weight: 500;
+}
+.teams-title .of-our{
+    color:#131313;
+    font-weight: 700;
+}
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color:#727272;
+    line-height: 1.6rem; 
+}
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
     header{
-        padding: 20px;
+        padding: 10px;
     }
     nav{
         flex-direction: column;
+    }
+    nav > ul{
+        flex-direction: column;
+
+    }
+    nav  li{
+        padding: 10px;
+        font-size: 2rem;
     }
     .banner-title{
         font-size: 2rem;
